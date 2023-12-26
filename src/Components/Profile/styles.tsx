@@ -1,0 +1,121 @@
+import {StyleSheet} from 'react-native';
+import {wp} from '../Helpers/responsive-ratio';
+import {palette} from '../Theme/Index';
+
+const styles = StyleSheet.create({
+  image: {
+    height: wp(20),
+    width: wp(20),
+    borderRadius: wp(20 / 2),
+    marginLeft: wp(4),
+  },
+  parentScoreCard: {
+    width: wp(28),
+    marginLeft: wp(4),
+    padding: wp(2),
+    borderRadius: 5,
+  },
+  scoreCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  divider: {
+    marginHorizontal: wp(4),
+    marginVertical: wp(8),
+    height: wp(0.3),
+    backgroundColor: palette.tertiary2,
+  },
+  timelineHeader: {
+    width: wp(27),
+    marginLeft: wp(15),
+    marginTop: wp(4),
+    backgroundColor: palette.primary,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: wp(-7),
+  },
+  activityMeter: {
+    height: wp(7),
+    width: wp(7),
+    borderRadius: wp(7 / 2),
+    backgroundColor: palette.primary,
+    bottom: -38,
+    marginLeft: wp(25),
+    justifyContent: 'center',
+    zIndex: 5,
+  },
+  emailVerification: {
+    height: wp(50),
+    width: wp(50),
+    marginLeft: wp(4),
+    borderRadius: 5,
+    marginBottom: wp(4),
+    justifyContent: 'center',
+  },
+  mysportChip: {
+    borderRadius: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: wp(2),
+  },
+  count: {
+    backgroundColor: palette?.primary2,
+    borderRadius: 15,
+    width: wp(10),
+    marginHorizontal: wp(1),
+  },
+  mygroupsCard: {
+    width: wp(40),
+    borderRadius: 10,
+    marginBottom: wp(4),
+    justifyContent: 'center',
+    marginRight: wp(5),
+  },
+  aboutdivider: {
+    marginRight: wp(4),
+    marginVertical: wp(4),
+    height: wp(0.3),
+    backgroundColor: palette.tertiary2,
+  },
+  inputStyle: {
+    borderColor: palette.inputBorder,
+    borderWidth: 1,
+    borderRadius: 5,
+    height: 40,
+    marginRight: wp(4),
+    marginTop: wp(2),
+    color: palette?.black,
+  },
+  confirmationModal: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: wp(50),
+    marginHorizontal: wp(4),
+    borderRadius: 10,
+  },
+  bottomConfirmationModal: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: wp(50),
+    marginHorizontal: wp(4),
+    borderRadius: 10,
+  },
+  overLay: {
+    position: 'absolute',
+    // flex: 1,
+    top: 0,
+    left: 0,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: palette.overlay,
+    height: '100%',
+    width: '100%',
+    zIndex: 10,
+  },
+});
+
+export default styles;

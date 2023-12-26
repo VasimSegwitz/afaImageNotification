@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "SFDYWAT65D.com.afa.users",
+        "paths": [
+          "/Activity/",
+          "www.afa.com/Activity/*"
+        ]
+      },
+      {
+        "appID": "SFDYWAT65D.com.afa.users",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
+}

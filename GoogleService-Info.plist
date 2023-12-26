@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>797059261139-9ruhj9ecdn336de4gh4pgc4fcj6maik0.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBRfr42hI-0ej9IIDoTcebSkC_bww7G0PU</string>
+	<key>BUNDLE_ID</key>
+	<string>com.afa.users</string>
+	<key>CLIENT_ID</key>
+	<string>797059261139-61js0grujs2c66bo0quqa8e5t8g3lc0r.apps.googleusercontent.com</string>
+	<key>DATABASE_URL</key>
+	<string>https://afa-4ca60.firebaseio.com</string>
+	<key>GCM_SENDER_ID</key>
+	<string>797059261139</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:797059261139:ios:0341f19711245289e7aa26</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>PROJECT_ID</key>
+	<string>afa-4ca60</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.797059261139-61js0grujs2c66bo0quqa8e5t8g3lc0r</string>
+	<key>STORAGE_BUCKET</key>
+	<string>afa-4ca60.appspot.com</string>
+</dict>
+</plist>
