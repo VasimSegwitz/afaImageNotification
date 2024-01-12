@@ -1,8 +1,34 @@
 #import "AppDelegate.h"
 #import <Firebase.h>
 #import <React/RCTBundleURLProvider.h>
+#import <React/RCTLinkingManager.h>
+
 
 @implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application
+   openURL:(NSURL *)url
+   options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+  NSString *urlString = url.absoluteString;
+  
+  NSLog(@"Error getting FCM urlString: %@", urlString);
+  
+  
+  return [RCTLinkingManager application:application openURL:url options:options];
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity
+ restorationHandler:(nonnull void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
+{
+  NSLog(@"application:continueUserActivity:restorationHandler: invoked.\n"
+            "ActivityType: %@ userActivity.webpageURL: %@",
+            userActivity.activityType,
+            userActivity.webpageURL.absoluteString);
+ return [RCTLinkingManager application:application
+                  continueUserActivity:userActivity
+                    restorationHandler:restorationHandler];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
